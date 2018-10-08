@@ -1,0 +1,38 @@
+{
+  "name": "{{#scoped}}@{{owner}}/{{/scoped}}{{name}}",
+  "description": "{{description}}",
+  "version": "{{version}}",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc --skipLibCheck",
+    "compile:watch": "tsc --skipLibCheck --watch",
+    "lint": "tslint \"src/**/*.ts*\" --force",
+    "prepublish": "npm run clean && npm run lint && npm run compile"
+  },
+  "bugs": {
+    "url": "https://github.com/{{owner}}/{{name}}/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "{{author}}",
+    "email": "{{email}}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/{{owner}}/{{name}}.git"
+  },
+  "keywords": [
+    "autogit",
+    "plugin",
+    "//TODO"
+  ],
+	"dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "rimraf": "^2.6.0",
+    "tslint": "^4.4.2",
+    "typescript": "^3.0.3"
+  }
+}
