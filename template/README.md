@@ -28,7 +28,7 @@ const {{_ "camelCase" name}} = require ( '{{#scoped}}@{{owner}}/{{/scoped}}{{nam
 module.exports = {
   commands: {
     'my-command': [
-      {{_ "camelCase" name}}({ /* YOUR OPTIONS */ })
+      {{_ "camelCase" name}} ({ /* YOUR OPTIONS */ })
     ]
   }
 }
