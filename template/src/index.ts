@@ -3,9 +3,9 @@
 
 const defaultOptions = {};
 
-function factory ( options? ) {
+function factory ( customOptions?: Partial<typeof defaultOptions> ) {
 
-  options = Object.assign ( {}, defaultOptions, options );
+  const options = Object.assign ( {}, defaultOptions, customOptions );
 
   return async function {{_ "camelCase" name}} ( config, repoPath, ctx, task ) {
 
