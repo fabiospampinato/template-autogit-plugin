@@ -27,7 +27,7 @@
     "plugin",
     "//TODO"
   ],
-	"dependencies": {
+  "dependencies": {
     "@types/node": "^10.9.4"
   },
   "devDependencies": {
